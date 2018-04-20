@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyMovieDB</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="movie_picture_content_description">Movie Picture</string>
+    <string name="detail_error_message">No data available for this movie</string>
+    <string name="detail_over_view_label">SYNOPSIS</string>
+    <string name="detail_rating_label">RATING</string>
+    <string name="detail_release_date_label">RELEASE DATE</string>
+    <string name="details_vote_count_label">VOTING</string>
+    <string name="error_internet_connection">Can\'t connect to the Internet</string>
+    <string name="go_offline">Go Offline</string>
+    <string name="pref_sort_type">sort_type</string>
+    <string name="pref_sort_type_title">Sort Movies By</string>
+    <string name="loading_data">Loading data ..</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_main_popular">Popular Movies</string>
+    <string name="title_activity_main_top_rated">Top Rated Movies</string>
+    <string name="title_activity_main_favorite">Favorite Movies</string>
+    <string name="EXTRA_MOVIE">extra_movie</string>
+
+    <string name="TRAILER_ID_KEY">trailer</string>
+
+</resources>

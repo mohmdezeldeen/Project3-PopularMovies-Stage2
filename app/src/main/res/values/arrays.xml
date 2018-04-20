@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_list_entries">
+        <item>Most Popular</item>
+        <item>Top Rated</item>
+        <item>Favorite</item>
+    </string-array>
+
+    <string-array name="sort_list_entries_values">
+        <item>Popular</item>
+        <item>TopRated</item>
+        <item>Favorite</item>
+    </string-array>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nested"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.DetailsActivity"
+    tools:showIn="@layout/activity_details">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvVoteCountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/details_vote_count_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/primary_text"
+            app:layout_constraintStart_toEndOf="@+id/ivMoviePoster"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvVoteCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintStart_toStartOf="@+id/tvVoteCountLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvVoteCountLabel"
+            tools:text="557" />
+
+        <TextView
+            android:id="@+id/tvReleaseDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/detail_release_date_label"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/ivMoviePoster"
+            app:layout_constraintTop_toBottomOf="@+id/tvVoteCount" />
+
+        <TextView
+            android:id="@+id/tvReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/secondary_text"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/tvReleaseDateLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvReleaseDateLabel"
+            tools:text="28-02-2018" />
+
+        <TextView
+            android:id="@+id/tvOverViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/detail_over_view_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/primary_text"
+            app:layout_constraintStart_toStartOf="@+id/ivMoviePoster"
+            app:layout_constraintTop_toBottomOf="@+id/ivMoviePoster" />
+
+        <TextView
+            android:id="@+id/tvOverView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/secondary_text"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvOverViewLabel"
+            app:layout_constraintTop_toBottomOf="@+id/tvOverViewLabel"
+            tools:text="Plot Synopsis review" />
+
+        <ImageView
+            android:id="@+id/ivMoviePoster"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintEnd_toEndOf="@+id/ivMoviePoster"
+            app:layout_constraintTop_toTopOf="@+id/ivMoviePoster"
+            tools:text="7.8" />
+
+        <RatingBar
+            android:id="@+id/rbVoteAverage"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="8dp"
+            android:foregroundGravity="center"
+            android:isIndicator="true"
+            android:numStars="10"
+            android:rating="5"
+            android:stepSize="0.1"
+            app:layout_constraintBottom_toBottomOf="@+id/ivMoviePoster"
+            app:layout_constraintEnd_toEndOf="@+id/ivMoviePoster"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ivMoviePoster" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
