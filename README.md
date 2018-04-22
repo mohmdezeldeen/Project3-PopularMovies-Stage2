@@ -56,5 +56,10 @@ Through this project, you will:
 * I've removed my api key from code, so i can push it in public GitHub, So you should replace it with your api key.
   * replace in **gradle.properties** file **API_KEY="YOUR_API_KEY_HERE"**
 ## Some Images
+![screenshot_1](https://user-images.githubusercontent.com/20706577/39101027-359b2cd4-4694-11e8-993d-5810965df115.png)
+
+![screenshot_2](https://user-images.githubusercontent.com/20706577/39101029-40137ed2-4694-11e8-9f49-5bc37fd69690.png)
+
+![screenshot_3](https://user-images.githubusercontent.com/20706577/39101030-41d9d7de-4694-11e8-8981-149740316c39.png)
 
 
