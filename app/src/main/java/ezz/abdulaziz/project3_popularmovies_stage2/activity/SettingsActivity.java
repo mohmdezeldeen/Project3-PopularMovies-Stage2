@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.activity;
+package ezz.abdulaziz.project3_popularmovies_stage2.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -6,7 +6,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import ezz.abdulaziz.project2_popularmovies_stage2.R;
+import ezz.abdulaziz.project3_popularmovies_stage2.R;
 
 public class SettingsActivity extends AppCompatActivity {
 

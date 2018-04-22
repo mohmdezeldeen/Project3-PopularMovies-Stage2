@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.adapter;
+package ezz.abdulaziz.project3_popularmovies_stage2.adapter;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -17,9 +17,9 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import ezz.abdulaziz.project2_popularmovies_stage2.R;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.Trailer;
-import ezz.abdulaziz.project2_popularmovies_stage2.utils.NetworkUtils;
+import ezz.abdulaziz.project3_popularmovies_stage2.R;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.Trailer;
+import ezz.abdulaziz.project3_popularmovies_stage2.utils.NetworkUtils;
 
 public class TrailerAdapter extends RecyclerView.Adapter<TrailerAdapter.TrailerViewHolder> {
     private final Context mContext;

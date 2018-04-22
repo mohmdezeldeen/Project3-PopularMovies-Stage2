@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "ezz.abdulaziz.project2_popularmovies_stage2"
+        applicationId "ezz.abdulaziz.project3_popularmovies_stage2"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1

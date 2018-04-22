@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.activity;
+package ezz.abdulaziz.project3_popularmovies_stage2.activity;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -24,31 +24,31 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import ezz.abdulaziz.project2_popularmovies_stage2.R;
-import ezz.abdulaziz.project2_popularmovies_stage2.adapter.ReviewAdapter;
-import ezz.abdulaziz.project2_popularmovies_stage2.adapter.TrailerAdapter;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.Movie;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.Review;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.ReviewsResponse;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.Trailer;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.TrailersResponse;
-import ezz.abdulaziz.project2_popularmovies_stage2.rest.ApiClient;
-import ezz.abdulaziz.project2_popularmovies_stage2.rest.ApiInterface;
-import ezz.abdulaziz.project2_popularmovies_stage2.utils.NetworkUtils;
+import ezz.abdulaziz.project3_popularmovies_stage2.R;
+import ezz.abdulaziz.project3_popularmovies_stage2.adapter.ReviewAdapter;
+import ezz.abdulaziz.project3_popularmovies_stage2.adapter.TrailerAdapter;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.Movie;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.Review;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.ReviewsResponse;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.Trailer;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.TrailersResponse;
+import ezz.abdulaziz.project3_popularmovies_stage2.rest.ApiClient;
+import ezz.abdulaziz.project3_popularmovies_stage2.rest.ApiInterface;
+import ezz.abdulaziz.project3_popularmovies_stage2.utils.NetworkUtils;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_BACKDROP_PATH;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_MOVIE_ID;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_MOVIE_TITLE;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_OVERVIEW;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_POPULARITY;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_POSTER_PATH;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_RELEASE_DATE;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_VOTE_AVERAGE;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_VOTE_COUNT;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CONTENT_URI;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_BACKDROP_PATH;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_MOVIE_ID;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_MOVIE_TITLE;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_OVERVIEW;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_POPULARITY;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_POSTER_PATH;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_RELEASE_DATE;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_VOTE_AVERAGE;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_VOTE_COUNT;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CONTENT_URI;
 
 public class DetailsActivity extends AppCompatActivity {
 

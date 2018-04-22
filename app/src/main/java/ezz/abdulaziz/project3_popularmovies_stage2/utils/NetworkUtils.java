@@ -1,10 +1,10 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.utils;
+package ezz.abdulaziz.project3_popularmovies_stage2.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.support.annotation.NonNull;
 
-import ezz.abdulaziz.project2_popularmovies_stage2.BuildConfig;
+import ezz.abdulaziz.project3_popularmovies_stage2.BuildConfig;
 
 /**
  * Created by EZZ on 2/27/2018.

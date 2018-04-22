@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2;
+package ezz.abdulaziz.project3_popularmovies_stage2;
 
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceFragmentCompat;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ezz.abdulaziz.project2_popularmovies_stage2">
+    package="ezz.abdulaziz.project3_popularmovies_stage2">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -40,7 +40,7 @@
         </activity>
 
         <provider
-            android:authorities="ezz.abdulaziz.project2_popularmovies_stage2"
+            android:authorities="ezz.abdulaziz.project3_popularmovies_stage2"
             android:name=".database.MovieContentProvider"
             android:exported="false"/>
 

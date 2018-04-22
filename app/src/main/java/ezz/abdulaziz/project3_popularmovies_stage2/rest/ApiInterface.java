@@ -1,9 +1,9 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.rest;
+package ezz.abdulaziz.project3_popularmovies_stage2.rest;
 
-import ezz.abdulaziz.project2_popularmovies_stage2.model.MoviesResponse;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.ReviewsResponse;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.TrailersResponse;
-import ezz.abdulaziz.project2_popularmovies_stage2.utils.NetworkUtils;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.MoviesResponse;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.ReviewsResponse;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.TrailersResponse;
+import ezz.abdulaziz.project3_popularmovies_stage2.utils.NetworkUtils;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;

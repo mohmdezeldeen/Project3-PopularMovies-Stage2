@@ -1,21 +1,21 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.database;
+package ezz.abdulaziz.project3_popularmovies_stage2.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import static android.provider.BaseColumns._ID;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_BACKDROP_PATH;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_MOVIE_ID;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_MOVIE_TITLE;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_OVERVIEW;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_POPULARITY;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_POSTER_PATH;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_RELEASE_DATE;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_TIMESTAMP;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_VOTE_AVERAGE;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CLM_VOTE_COUNT;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.TBL_MOVIE;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_BACKDROP_PATH;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_MOVIE_ID;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_MOVIE_TITLE;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_OVERVIEW;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_POPULARITY;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_POSTER_PATH;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_RELEASE_DATE;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_TIMESTAMP;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_VOTE_AVERAGE;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CLM_VOTE_COUNT;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.TBL_MOVIE;
 
 /**
  * Created by EZZ on 2018-04-03.

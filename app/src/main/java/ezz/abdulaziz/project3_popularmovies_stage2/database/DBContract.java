@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.database;
+package ezz.abdulaziz.project3_popularmovies_stage2.database;
 
 import android.net.Uri;
 import android.provider.BaseColumns;
@@ -9,7 +9,7 @@ import android.provider.BaseColumns;
 
 public class DBContract {
 
-    public static final String AUTHORITY = "ezz.abdulaziz.project2_popularmovies_stage2";
+    public static final String AUTHORITY = "ezz.abdulaziz.project3_popularmovies_stage2";
     private static final Uri BASE_CONTENT_URI = Uri.parse("content://" + AUTHORITY);
     public static final String PATH_MOVIES = "movies";
 

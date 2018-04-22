@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2;
+package ezz.abdulaziz.project3_popularmovies_stage2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

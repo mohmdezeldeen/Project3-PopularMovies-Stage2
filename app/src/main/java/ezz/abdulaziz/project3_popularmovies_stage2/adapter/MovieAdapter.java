@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.adapter;
+package ezz.abdulaziz.project3_popularmovies_stage2.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,10 +15,10 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import ezz.abdulaziz.project2_popularmovies_stage2.R;
-import ezz.abdulaziz.project2_popularmovies_stage2.activity.DetailsActivity;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.Movie;
-import ezz.abdulaziz.project2_popularmovies_stage2.utils.NetworkUtils;
+import ezz.abdulaziz.project3_popularmovies_stage2.R;
+import ezz.abdulaziz.project3_popularmovies_stage2.activity.DetailsActivity;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.Movie;
+import ezz.abdulaziz.project3_popularmovies_stage2.utils.NetworkUtils;
 
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {

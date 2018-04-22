@@ -1,6 +1,6 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.rest;
+package ezz.abdulaziz.project3_popularmovies_stage2.rest;
 
-import ezz.abdulaziz.project2_popularmovies_stage2.utils.NetworkUtils;
+import ezz.abdulaziz.project3_popularmovies_stage2.utils.NetworkUtils;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 

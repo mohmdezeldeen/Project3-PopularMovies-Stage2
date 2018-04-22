@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.adapter;
+package ezz.abdulaziz.project3_popularmovies_stage2.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import ezz.abdulaziz.project2_popularmovies_stage2.R;
-import ezz.abdulaziz.project2_popularmovies_stage2.model.Review;
+import ezz.abdulaziz.project3_popularmovies_stage2.R;
+import ezz.abdulaziz.project3_popularmovies_stage2.model.Review;
 
 public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewViewHolder> {
     private final List<Review> mReviewsList;

@@ -1,4 +1,4 @@
-package ezz.abdulaziz.project2_popularmovies_stage2.database;
+package ezz.abdulaziz.project3_popularmovies_stage2.database;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -11,8 +11,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import static android.provider.BaseColumns._ID;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.CONTENT_URI;
-import static ezz.abdulaziz.project2_popularmovies_stage2.database.DBContract.DBSchema.TBL_MOVIE;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.CONTENT_URI;
+import static ezz.abdulaziz.project3_popularmovies_stage2.database.DBContract.DBSchema.TBL_MOVIE;
 
 @SuppressWarnings("ConstantConditions")
 public class MovieContentProvider extends ContentProvider {
