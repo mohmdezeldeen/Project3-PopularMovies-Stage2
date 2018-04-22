@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
@@ -41,7 +40,7 @@ public class TrailerAdapter extends RecyclerView.Adapter<TrailerAdapter.TrailerV
     @Override
     public void onBindViewHolder(TrailerViewHolder holder, int position) {
         Trailer trailer = mTrailersList.get(position);
-        holder.mTrailerName.setText(trailer.getName());
+//        holder.mTrailerName.setText(trailer.getName());
         Picasso.with(mContext).load(NetworkUtils.TRAILER_THUMBNAIL_URL + trailer.getKey() +
                 NetworkUtils.TRAILER_THUMBNAIL_URL2).into(holder.mTrailerThumbnail);
     }
@@ -53,8 +52,8 @@ public class TrailerAdapter extends RecyclerView.Adapter<TrailerAdapter.TrailerV
 
 
     public class TrailerViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.tvTrailerName)
-        TextView mTrailerName;
+        //        @BindView(R.id.tvTrailerName)
+//        TextView mTrailerName;
         @BindView(R.id.ivTrailerThumbnail)
         ImageView mTrailerThumbnail;
 
@@ -74,11 +73,11 @@ public class TrailerAdapter extends RecyclerView.Adapter<TrailerAdapter.TrailerV
                         Uri.parse(NetworkUtils.YOUTUBE_APP_URL + trailerKey));
                 try {
                     appIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    appIntent.putExtra(mContext.getString(R.string.TRAILER_ID_KEY), trailerKey);
+                    appIntent.putExtra(mContext.getString(R.string.TRAILER_KEY), trailerKey);
                     mContext.startActivity(appIntent);
                 } catch (ActivityNotFoundException ex) {
                     webIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    webIntent.putExtra(mContext.getString(R.string.TRAILER_ID_KEY), trailerKey);
+                    webIntent.putExtra(mContext.getString(R.string.TRAILER_KEY), trailerKey);
                     mContext.startActivity(webIntent);
                 }
             }

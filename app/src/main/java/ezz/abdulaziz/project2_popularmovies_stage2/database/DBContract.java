@@ -37,15 +37,12 @@ public class DBContract {
 
         public static final String TBL_REVIEW = "reviews";
         public static final String CLR_REVIEW_ID = "review_id";
-        public static final String CLR_URL = "url";
         public static final String CLR_AUTHOR = "author";
         public static final String CLR_CONTENT = "content";
 
         public static final String TBL_TRAILER = "trailers";
+        public static final String CLT_KEY = "key";
         public static final String CLT_NAME = "name";
-        public static final String CLT_SIZE = "size";
-        public static final String CLT_SOURCE = "source";
-        public static final String CLT_TYPE = "type";
 
     }
 

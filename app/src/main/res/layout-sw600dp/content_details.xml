@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/details_vote_count_label"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="@color/primary_text"
@@ -31,11 +31,10 @@
             android:id="@+id/tvVoteCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="@color/secondary_text"
+            android:textSize="50sp"
             app:layout_constraintStart_toStartOf="@+id/tvVoteCountLabel"
             app:layout_constraintTop_toBottomOf="@+id/tvVoteCountLabel"
             tools:text="557" />
@@ -44,24 +43,25 @@
             android:id="@+id/tvReleaseDateLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:text="@string/detail_release_date_label"
             android:textColor="@color/primary_text"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/ivMoviePoster"
-            app:layout_constraintTop_toBottomOf="@+id/tvVoteCount" />
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvVoteCountLabel"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvReleaseDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:textColor="@color/secondary_text"
-            android:textSize="24sp"
+            android:textSize="30sp"
             app:layout_constraintStart_toStartOf="@+id/tvReleaseDateLabel"
             app:layout_constraintTop_toBottomOf="@+id/tvReleaseDateLabel"
             tools:text="28-02-2018" />
@@ -70,20 +70,20 @@
             android:id="@+id/tvOverViewLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/detail_over_view_label"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="@color/primary_text"
-            app:layout_constraintStart_toStartOf="@+id/ivMoviePoster"
-            app:layout_constraintTop_toBottomOf="@+id/ivMoviePoster" />
+            app:layout_constraintStart_toStartOf="@+id/tvVoteCount"
+            app:layout_constraintTop_toBottomOf="@+id/tvVoteCount" />
 
         <TextView
             android:id="@+id/tvOverView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="236dp"
+            android:layout_marginRight="236dp"
             android:layout_marginTop="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/secondary_text"
@@ -93,13 +93,13 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/tvOverViewLabel"
             app:layout_constraintTop_toBottomOf="@+id/tvOverViewLabel"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="0.003"
             tools:text="Plot Synopsis review" />
 
         <ImageView
             android:id="@+id/ivMoviePoster"
-            android:layout_width="200dp"
-            android:layout_height="250dp"
+            android:layout_width="280dp"
+            android:layout_height="340dp"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -152,7 +152,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="@color/primary_text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvOverView" />
+            app:layout_constraintTop_toBottomOf="@+id/ivMoviePoster" />
 
         <TextView
             android:id="@+id/tvReviewsLabel"

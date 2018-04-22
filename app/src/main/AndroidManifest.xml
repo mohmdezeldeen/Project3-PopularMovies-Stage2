@@ -38,6 +38,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
         </activity>
+
+        <provider
+            android:authorities="ezz.abdulaziz.project2_popularmovies_stage2"
+            android:name=".database.MovieContentProvider"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

@@ -1,20 +1,21 @@
 package ezz.abdulaziz.project2_popularmovies_stage2.activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         checkConnection();
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            mRecyclerView.setLayoutManager(new GridLayoutManager(this, 3));
+            mRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
         } else {
             mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         }
@@ -84,20 +85,26 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     private void checkConnection() {
         if (!NetworkUtils.isConnectionAvailable(this)) {
-            Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),
-                    R.string.error_internet_connection
-                    , Snackbar.LENGTH_INDEFINITE);
-            snackbar.setAction(R.string.go_offline, new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    //if connection found load data from Api
-                    fetchMoviesFromDB();
-                }
-            });
-            snackbar.setActionTextColor(getResources().getColor(R.color.colorAccent));
-            snackbar.show();
+
+            AlertDialog.Builder builder;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                builder = new AlertDialog.Builder(MainActivity.this, android.R.style.Theme_Material_Dialog_Alert);
+            } else {
+                builder = new AlertDialog.Builder(MainActivity.this);
+            }
+            builder.setMessage(R.string.error_internet_connection)
+                    .setPositiveButton(R.string.retry, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            checkConnection();
+                        }
+                    })
+                    .setNegativeButton(R.string.show_favorite, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            fetchMoviesFromDB();
+                        }
+                    })
+                    .show();
         } else {
-            //TODO get movie data
             fetchMoviesByShowType();
         }
     }
@@ -146,9 +153,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     private void fetchMoviesByShowType() {
         ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
-
         Call<MoviesResponse> moviesResponseCall = null;
-
         if (SHOW_TYPE.equals(String.valueOf(NetworkUtils.ShowType.Popular))) {
             setTitle(getString(R.string.title_activity_main_popular));
             moviesResponseCall = apiInterface.getPopularMovies(NetworkUtils.API_KEY);
@@ -171,12 +176,10 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
                 @Override
                 public void onFailure(Call<MoviesResponse> call, Throwable t) {
-                    Toast.makeText(getApplicationContext(), "Failed to getResult", Toast.LENGTH_LONG
-                    ).show();
+                    Log.i("MoviesResponse", "Failed to getMoviesResult");
                 }
             });
         }
-
     }
 
     @Override

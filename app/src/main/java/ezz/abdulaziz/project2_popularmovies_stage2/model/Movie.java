@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Movie implements Parcelable{
+public class Movie implements Parcelable {
 
     @SerializedName("id")
     private Integer id;
@@ -162,32 +162,29 @@ public class Movie implements Parcelable{
     }
 
     protected Movie(Parcel in) {
-        posterPath = in.readString();
-        overview = in.readString();
-        releaseDate = in.readString();
+
         if (in.readByte() == 0) {
             id = null;
         } else {
             id = in.readInt();
         }
-        title = in.readString();
-        backdropPath = in.readString();
-        if (in.readByte() == 0) {
-            popularity = null;
-        } else {
-            popularity = in.readDouble();
-        }
-        if (in.readByte() == 0) {
+        if (in.readByte() == 0)
             voteCount = null;
-        } else {
+        else
             voteCount = in.readInt();
-        }
-        byte tmpVideo = in.readByte();
-        if (in.readByte() == 0) {
+        if (in.readByte() == 0)
             voteAverage = null;
-        } else {
+        else
             voteAverage = in.readDouble();
-        }
+        if (in.readByte() == 0)
+            popularity = null;
+        else
+            popularity = in.readDouble();
+        title = in.readString();
+        overview = in.readString();
+        posterPath = in.readString();
+        backdropPath = in.readString();
+        releaseDate = in.readString();
     }
 
 

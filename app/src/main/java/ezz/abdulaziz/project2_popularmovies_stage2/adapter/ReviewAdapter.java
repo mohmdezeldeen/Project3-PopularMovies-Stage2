@@ -21,12 +21,8 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
     }
 
     public class ReviewViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.tvAuthorLabel)
-        TextView mTVAuthorLabel;
         @BindView(R.id.tvAuthor)
         TextView mTVAuthor;
-        @BindView(R.id.tvContentLabel)
-        TextView mTVContentLabel;
         @BindView(R.id.tvContent)
         TextView mTVContent;
 
